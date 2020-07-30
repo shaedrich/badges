@@ -22,8 +22,8 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 	$scope.doPrimaryAction = function (event) {
 		$mdDialog.show(
 			$mdDialog.alert()
-			.title('Primary Action')
-			.textContent('Primary actions can be used for one click actions')
+			.title('About')
+			.textContent('Badges are displayed on this page depending on how much IQ, transcriptions and annotations you have. You will also see a badge, depending on your role on Genius. That means contributor, editor, mediator, moderator or staff. If you\'re a verified artist of Tier 1 or Tier 2, you\'ll also see a badge. Just enter your username in the "USER" input (field), click "SEARCH" and you will see your badges.')
 			.ariaLabel('Primary click demo')
 			.ok('Awesome!')
 			.targetEvent(event));
@@ -364,7 +364,8 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 		newtab: function () {
 			$scope.url = {
 				github: 'https://github.com/nnmrts/badges',
-				impressum: 'https://www.pumpn.net/impressum.html'
+				impressum: 'https://www.pumpn.net/impressum.html',
+				donate: 'https://beerpay.io/nnmrts/badges'
 			};
 		},
 		search: function () {

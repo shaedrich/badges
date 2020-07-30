@@ -108,7 +108,7 @@
 			  </md-button>
 			  <md-menu-content width="6" >
 				<md-menu-item>
-				  <md-button md-menu-align-target ng-click="ctrl.announceClick($index)">
+				  <md-button md-menu-align-target ng-click="ctrl.announceClick($index)" ng-href="collection">
 					  <div layout="row" flex>
 						<p flex>Customize your collection!</p>
 					  </div>
@@ -121,12 +121,10 @@
 	</md-content>
 	<md-content id="site" ng-style="styles.site">
 		<md-sidenav class="md-sidenav-left" md-component-id="left" >
-		
 		<md-list>
 		<md-list-item>
 		<div class="md-list-item-text" layout="column">
 		<h2><a ng-href="{{homepath}}" id="badgesdrawertitle">BADGES</a></h2>
-		<p>{{version}}</p>
 		</div>
 		</md-list-item>
 		<md-divider></md-divider>
@@ -134,7 +132,8 @@
 		<md-icon md-svg-icon="help-circle"></md-icon>
 		  <p>ABOUT</p>
 	    </md-list-item>
-		<md-list-item class="secondary-button-padding" ng-click="doSecondaryAction($event)">
+		<md-divider></md-divider>
+		<md-list-item id="donate" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.donate}}" ng-mousedown="ui.newtab()">
 		<md-icon md-svg-icon="currency-usd"></md-icon>
 		  <p>DONATE</p>
 	    </md-list-item>
@@ -143,6 +142,7 @@
 		<md-icon md-svg-icon="github-circle"></md-icon>
 		  <p>GITHUB</p>
 	    </md-list-item>
+		<md-divider></md-divider>
 		<md-list-item id="impressum" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.impressum}}" ng-mousedown="ui.newtab()">
 		<md-icon md-svg-icon="lock"></md-icon>
 		  <p>PRIVACY & TERMS</p>
