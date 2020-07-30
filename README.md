@@ -1,3 +1,5 @@
+Yes! Badges project is continued! Right here! Enjoy!
+
 # Badges
 
 badges for everyone
