@@ -1,5 +1,5 @@
 async function loadUser(id) {
-	var user = await fetch(`https://api.genius/users/${id}`);
+	var user = await fetch(`https://api.genius.com/users/${id}`);
 	var userData = await user.json();
 	return userData;
 }
