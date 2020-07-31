@@ -106,15 +106,7 @@
 						<a href="https://genius.com/" class="logo_link">GENIUS</a>
 					</div>
 				</div>
-				<md-menu md-position-mode="target-right target">
 					<md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-					</md-button>
-					<md-menu-content width="6">
-						<md-menu-item>
-							<md-button md-menu-align-target ng-click="ctrl.announceClick($index)" ng-href="collection">
-								<div layout="row" flex>
-									<p flex>Customize your collection!</p>
 								</div>
 							</md-button>
 						</md-menu-item>
@@ -130,6 +122,11 @@
 					<div class="md-list-item-text" layout="column">
 						<h2><a ng-href="{{homepath}}" id="badgesdrawertitle">BADGES</a></h2>
 					</div>
+					</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item class="secondary-button-padding" ng-href="collection">
+					<md-icon md-svg-icon=""></md-icon>
+					<p flex>CUSTOMIZE COLLECTION</p>
 				</md-list-item>
 				<md-divider></md-divider>
 				<md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
