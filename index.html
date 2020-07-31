@@ -97,61 +97,58 @@
 <body class="badges-layout" ng-app="badges" ng-controller="all" ng-cloak>
 	<md-content>
 		<md-toolbar>
-			<div class="md-toolbar-tools">
-				<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
-					<md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
-				</md-button>
-				<div id="titlecontainer">
-					<div class="logo_container">
-						<a href="https://genius.com/" class="logo_link">GENIUS</a>
-					</div>
-				</div>
-					<md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-								</div>
-							</md-button>
-						</md-menu-item>
-					</md-menu-content>
-				</md-menu>
+		  <div class="md-toolbar-tools">
+			<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
+			  <md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
+			</md-button>
+			<div id="titlecontainer">
+			<div class="logo_container">
+				<a href="https://genius.com/" class="logo_link">GENIUS</a> 
 			</div>
+			</div>
+			  <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+					  </div>
+				  </md-button>
+				</md-menu-item>
+			  </md-menu-content>
+			</md-menu>
+		  </div>
 		</md-toolbar>
 	</md-content>
 	<md-content id="site" ng-style="styles.site">
-		<md-sidenav class="md-sidenav-left" md-component-id="left">
-			<md-list>
-				<md-list-item>
-					<div class="md-list-item-text" layout="column">
-						<h2><a ng-href="{{homepath}}" id="badgesdrawertitle">BADGES</a></h2>
-					</div>
-					</md-list-item>
-				<md-divider></md-divider>
-				<md-list-item class="secondary-button-padding" ng-href="collection">
-					<md-icon md-svg-icon=""></md-icon>
-					<p flex>CUSTOMIZE COLLECTION</p>
-				</md-list-item>
-				<md-divider></md-divider>
-				<md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
-					<md-icon md-svg-icon="help-circle"></md-icon>
-					<p>ABOUT</p>
-				</md-list-item>
-				<md-divider></md-divider>
-				<md-list-item id="donate" class="secondary-button-padding md-primary" target="_blank"
-					ng-href="{{url.donate}}" ng-mousedown="ui.newtab()">
-					<md-icon md-svg-icon="currency-usd"></md-icon>
-					<p>DONATE</p>
-				</md-list-item>
-				<md-divider></md-divider>
-				<md-list-item id="github" class="secondary-button-padding md-primary" target="_blank"
-					ng-href="{{url.github}}" ng-mousedown="ui.newtab()">
-					<md-icon md-svg-icon="github-circle"></md-icon>
-					<p>GITHUB</p>
-				</md-list-item>
-				<md-divider></md-divider>
-				<md-list-item id="impressum" class="secondary-button-padding md-primary" target="_blank"
-					ng-href="{{url.impressum}}" ng-mousedown="ui.newtab()">
-					<md-icon md-svg-icon="lock"></md-icon>
-					<p>PRIVACY & TERMS</p>
-				</md-list-item>
-			</md-list>
+		<md-sidenav class="md-sidenav-left" md-component-id="left" >
+		<md-list>
+		<md-list-item>
+		<div class="md-list-item-text" layout="column">
+		<h2><a ng-href="{{homepath}}" id="badgesdrawertitle">BADGES</a></h2>
+		</div>
+		</md-list-item>
+		<md-divider></md-divider>
+		<md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
+		<md-icon md-svg-icon=""></md-icon>
+		<p flex>CUSTOMIZE COLLECTION</p>
+		</md-list-item>
+		<md-divider></md-divider>
+		<md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
+		<md-icon md-svg-icon="help-circle"></md-icon>
+		  <p>ABOUT</p>
+	    </md-list-item>
+		<md-divider></md-divider>
+		<md-list-item id="donate" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.donate}}" ng-mousedown="ui.newtab()">
+		<md-icon md-svg-icon="currency-usd"></md-icon>
+		  <p>DONATE</p>
+	    </md-list-item>
+		<md-divider></md-divider>
+		<md-list-item id="github" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.github}}" ng-mousedown="ui.newtab()">
+		<md-icon md-svg-icon="github-circle"></md-icon>
+		  <p>GITHUB</p>
+	    </md-list-item>
+		<md-divider></md-divider>
+		<md-list-item id="impressum" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.impressum}}" ng-mousedown="ui.newtab()">
+		<md-icon md-svg-icon="lock"></md-icon>
+		  <p>PRIVACY & TERMS</p>
+	    </md-list-item>
+		</md-list>
 		</md-sidenav>
 		<md-card id="top" ng-style="styles.top">
 			<md-card-content>
