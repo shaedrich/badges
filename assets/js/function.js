@@ -1,3 +1,12 @@
+var apiKey = "8CqqwrIyKbAymHVZxLkjYO8k4axOzSXcvHoea6svoLqugeZwJRIdWssm3_tOUvDI0"
+async function loadUser(id) {/*
+	var req = await fetch(`https://api.genius.com/users/${id}`, {
+		headers: {
+				'Authorization': 'Bearer' + ' ' + apiKey
+		}
+	})
+	var res = await req.json();
+	return res.response.user;*/
 	return {
 		"_type": "user",
 		"about_me": {},
@@ -118,5 +127,15 @@
 		}
 	  }
 }
+
 loadUser(8068117).then(function(userData) {
+    var banner = document.getElementById('js-profile-header-banner');
+	var avatar = document.getElementById('js-profile-header-avatar');
+	var username = document.getElementById('js-profile-username');
+	var iq = document.getElementById('js-profile-iq');
+	
+	banner.style.backgroundImage = `url(${userData.header_image_url})`;
+	avatar.style.backgroundImage = `url(${userData.avatar.small.url})`;
+	username.innerHTML = `${userData.name} (@${userData.login})`
+	iq.innerHTML = userData.iq
 })

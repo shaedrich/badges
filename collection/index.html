@@ -41,6 +41,7 @@
 	<link rel="stylesheet" href="../fonts/fonts.css">
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../assets/css/profil.css">
 	<!-- JS -->
 	<!--- LIBRARIES --->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -93,7 +94,16 @@
 		</div>
 		<main class="mdl-layout__content">
 			<div class="infocontainer mdl-card mdl-shadow--2dp">
-				<span class="headline">Hey Henni!</span>
+				<div class="profile_header" id="js-profile-header" style="margin-bottom:50px;">
+					<div class="banner-image banner_image--more-transparent_gradient">
+						<div class="banner_image-blurred_image clipped_background_image" id="js-profile-header-banner"></div>
+					</div>
+					<div class="user_avatar profile_header-avatar clipped_background_image--background_fill clipped_background_image" id="js-profile-header-avatar"></div>
+				</div>
+				<h1 class="profile_identity-name_iq_and_role_icon u-hair_bottom_margin" style="margin:0 auto;">
+					<span class="headline">Hey <span id="js-profile-username">Henni</span>!</span>
+					<span class="profile_identity-iq tag_label tag_label--yellow_background" id="js-profile-iq" style="text-align:center;"></span>
+				</h1>
 				<span class="info">
 					This is your current badges collection. You can move, remove and add badges, save your changes and
 					then they will be shown in your badges profile.<br>Some badges, like the role badges, are assigned
@@ -201,7 +211,7 @@
 			 */
 			angular.module('BlankApp', ['ngMaterial']);
 		</script>
-		<script src="assets/js/function.js"></script>
+		<script src="../assets/js/function.js"></script>
 </body>
 
 </html>
