@@ -32,10 +32,10 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 	$scope.doSecondaryAction = function (event) {
 		$mdDialog.show(
 			$mdDialog.alert()
-			.title('Secondary Action')
-			.textContent('Secondary actions can be used for one click actions')
+			.title('Privacy & Terms')
+			.textContent('Impressum:')
 			.ariaLabel('Secondary click demo')
-			.ok('Neat!')
+			.ok('Alright!')
 			.targetEvent(event));
 	};
 
