@@ -1,97 +1,4 @@
-<!doctype html>
-<html lang="en" class="mdl-js">
-
-<head>
-	<!-- TITLE -->
-	<title>Badges</title>
-	<link rel="author" href="humans.txt" />
-	<!-- Web Application Manifest -->
-	<link rel="manifest" href="../manifest.json">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="Badges">
-	<!-- META -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" content="badgesbadgesbadgesbadgesbadgesbadges">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="apple-mobile-web-app-title" content="Badges">
-	<meta name="application-name" content="Badges">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png?v=m2dBzPMjbw">
-	<meta name="msapplication-config" content="favicon/browserconfig.xml?v=m2dBzPMjbw">
-	<meta name="theme-color" content="#ffffff">
-	<!-- FAVICON -->
-	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png?v=m2dBzPMjbw">
-	<link rel="icon" type="image/png" href="../favicon/favicon-32x32.png?v=m2dBzPMjbw" sizes="32x32">
-	<link rel="icon" type="image/png" href="../favicon/favicon-194x194.png?v=m2dBzPMjbw" sizes="194x194">
-	<link rel="icon" type="image/png" href="../favicon/android-chrome-192x192.png?v=m2dBzPMjbw" sizes="192x192">
-	<link rel="icon" type="image/png" href="../favicon/favicon-16x16.png?v=m2dBzPMjbw" sizes="16x16">
-	<!-- <link rel="manifest" href="../favicon/manifest.json?v=m2dBzPMjbw"> -->
-	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg?v=m2dBzPMjbw" color="#ffff64">
-	<link rel="shortcut icon" href="../favicon/favicon.ico?v=m2dBzPMjbw">
-	<!-- CSS -->
-	<!--- LIBRARIES --->
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="../libraries/normalize/normalize.css">
-	<link rel="stylesheet" href="../libraries/emojione/assets/css/emojione.css" />
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-	<link rel="stylesheet" href="../libraries/mdl/material.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel='stylesheet' href="../libraries/nprogress/nprogress.css" />
-	<!--- MAIN --->
-	<link rel="stylesheet" href="../fonts/fonts.css">
-	<link rel="stylesheet" href="../style.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="../assets/css/profil.css">
-	<!-- JS -->
-	<!--- LIBRARIES --->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="../libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
-	<script src="../libraries/sortable-animation/Sortable.js"></script>
-	<script src="../libraries/bez/jquery.bez.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script>
-	<script src="../libraries/bootbox/bootbox.min.js"></script>
-	<script src="../libraries/browserify/bundle.js"></script>
-	<script src="../libraries/emojione/emojione.js"></script>
-	<script src="../libraries/is.js/is.js"></script>
-	<!-- Angular Material Dependencies -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-animate.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-aria.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-messages.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-route.js"></script>
-	<!-- Angular Material Javascript now available via Google CDN; version 0.9.4 used here -->
-	<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-	<script src="../libraries/mdl/material.js"></script>
-	<script src="../libraries/nprogress/nprogress.js"></script>
-	<script src="../libraries/xhr/xhr.js"></script>
-	<!--- MAIN --->
-	<script src="../badges.js"></script>
-	<script src="collection.js"></script>
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-		<![endif]-->
-</head>
-
 <body id="body" onload="collectioninit(); init();">
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header badges-layout">
-		<header class="mdl-layout__header badges-header">
-			<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<a href="https://genius.com/" class="logo_link">GENIUS</a>
-			</div>
-		</header>
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title"><a href="" id="badgesdrawertitle">BADGES</a></span>
-			<nav class="mdl-navigation">
-				<div class="mdl-navigation__link" id="about">ABOUT</div>
-				<div class="mdl-navigation__link" id="donate">DONATE</div>
-				<a class="mdl-navigation__link" id="github" href="https://github.com/nnmrts/badges"
-					target="_blank">GITHUB REPOSITORY</a>
-			</nav>
-		</div>
 		<main class="mdl-layout__content">
 			<div class="infocontainer mdl-card mdl-shadow--2dp container-fluid">
 				<div class="profile_header" id="js-profile-header" style="margin-bottom:50px;">
@@ -112,7 +19,8 @@
 			</div>
 			<button id="add"
 				class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored container-fluid">ADD
-				BADGES</button>
+				BADGES
+			</button>
 			<div id="badgescatalog" style="display: none"></div>
 			<div class="nav mdl-card mdl-shadow--2dp container-fluid" id="nav">
 				<div class="items" nav-index="0">
@@ -213,5 +121,3 @@
 		</script>
 		<script src="../assets/js/function.js"></script>
 </body>
-
-</html>
