@@ -41,7 +41,7 @@
 	<link rel='stylesheet' href="libraries/animate.css/animate.css" />
 	<!-- || MAIN -->
 	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- | JS -->
 	<!-- || LIBRARIES -->
 	<!-- ||| JQUERY -->
@@ -131,6 +131,6 @@
     } else {
         include('home.php');
     }
-<script src="assets/js/function.js"></script>
+	<script src="assets/js/function.js"></script>
 </body>
 </html>
