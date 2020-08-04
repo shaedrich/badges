@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="assets/css/profil.css">
     <!-- | TITLE -->
 	<title>Badges</title>
 	<link rel="author" href="humans.txt" />
@@ -42,8 +41,11 @@
 	<!-- || MAIN -->
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="collection/style.css">
+	<link rel="stylesheet" href="assets/css/profil.css">
 	<!-- | JS -->
 	<!-- || LIBRARIES -->
+	<script src="libraries/sortable-animation/Sortable.js"></script>
 	<!-- ||| JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -88,7 +90,8 @@
 		}]);
 	</script>
 	<!--- MAIN --->
-	<script src="badges.js"></script>
+	<script src="assets/js/badges.js"></script>
+	<script src="collection/collection.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 		<![endif]-->
@@ -103,8 +106,6 @@
 				</md-button>
 				<div id="titlecontainer">
 					<div class="logo_container">
-						<a href="https://genius.com/" class="logo_link">GENIUS</a>
-				<a href="https://genius.com/" class="logo_link">GENIUS</a> 
 						<a href="https://genius.com/" class="logo_link">GENIUS</a>
 					</div>
 				</div>
@@ -124,13 +125,14 @@
 				</md-menu>
 			</div>
 		</md-toolbar>
-	</md-content>
- <?php
-    if ($_GET['page'] === 'collection') {
-        include('collection/collection.php');
-    } else {
-        include('home.php');
-    }
+	</md-content> 
+	<?php
+		if ($_GET['page'] === 'collection') {
+			include('collection/collection.php');
+		} else {
+			include('home.php');
+		}
+	?>
 	<script src="assets/js/function.js"></script>
 </body>
 </html>
