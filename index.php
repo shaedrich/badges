@@ -95,24 +95,34 @@
 </head>
 
 <body class="badges-layout" ng-app="badges" ng-controller="all" ng-cloak>
-    <md-content>
+	<md-content>
 		<md-toolbar>
-		  <div class="md-toolbar-tools">
-			<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
-			  <md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
-			</md-button>
-			<div id="titlecontainer">
-			<div class="logo_container">
+			<div class="md-toolbar-tools">
+				<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
+					<md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
+				</md-button>
+				<div id="titlecontainer">
+					<div class="logo_container">
+						<a href="https://genius.com/" class="logo_link">GENIUS</a>
 				<a href="https://genius.com/" class="logo_link">GENIUS</a> 
+						<a href="https://genius.com/" class="logo_link">GENIUS</a>
+					</div>
+				</div>
+				<md-menu md-position-mode="target-right target">
+					<md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+					</md-button>
+					<md-menu-content width="6">
+						<md-menu-item>
+							<md-button md-menu-align-target ng-click="ctrl.announceClick($index)">
+								<div layout="row" flex>
+									<p flex>Customize your collection!</p>
+								</div>
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
 			</div>
-			</div>
-			  <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-					  </div>
-				  </md-button>
-				</md-menu-item>
-			  </md-menu-content>
-			</md-menu>
-		  </div>
 		</md-toolbar>
 	</md-content>
  <?php
