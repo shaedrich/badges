@@ -117,7 +117,8 @@
 		</md-toolbar>
 	</md-content> 
 	<?php
-		if ($_GET['page'] === 'collection') {
+		$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+		if ($page === 'collection') {
 			include('collection/collection.php');
 		} else {
 			include('home.php');
