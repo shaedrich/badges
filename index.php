@@ -109,6 +109,10 @@
 						<a href="https://genius.com/" class="logo_link">GENIUS</a>
 					</div>
 				</div>
+				<div><!--
+					has to stay empty in order for the flexbox layout to work properly.
+					space-between property simulates a grid
+				--></div>
 			</div>
 		</md-toolbar>
 	</md-content> 
