@@ -120,7 +120,7 @@
         include('collection/collection.php');
     } else {
         include('home.php');
-    }
+    }?>
 <script src="assets/js/function.js"></script>
 </body>
 </html>
