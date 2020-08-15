@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="assets/css/profil.css">
     <!-- | TITLE -->
 	<title>Badges</title>
 	<link rel="author" href="humans.txt" />
@@ -41,9 +40,12 @@
 	<link rel='stylesheet' href="libraries/animate.css/animate.css" />
 	<!-- || MAIN -->
 	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="collection/style.css">
+	<link rel="stylesheet" href="assets/css/profil.css">
 	<!-- | JS -->
 	<!-- || LIBRARIES -->
+	<script src="libraries/sortable-animation/Sortable.js"></script>
 	<!-- ||| JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -88,39 +90,49 @@
 		}]);
 	</script>
 	<!--- MAIN --->
-	<script src="badges.js"></script>
+	<script src="assets/js/badges.js"></script>
+	<script src="collection/collection.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 		<![endif]-->
 </head>
 
 <body class="badges-layout" ng-app="badges" ng-controller="all" ng-cloak>
-    <md-content>
+	<md-content>
 		<md-toolbar>
-		  <div class="md-toolbar-tools">
-			<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
-			  <md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
-			</md-button>
-			<div id="titlecontainer">
-			<div class="logo_container">
-				<a href="https://genius.com/" class="logo_link">GENIUS</a> 
+			<div class="md-toolbar-tools">
+				<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
+					<md-icon id="black-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
+				</md-button>
+				<div id="titlecontainer">
+					<div class="logo_container">
+						<a href="https://genius.com/" class="logo_link">GENIUS</a>
+					</div>
+				</div>
+				<md-menu md-position-mode="target-right target">
+					<md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+					</md-button>
+					<md-menu-content width="6">
+						<md-menu-item>
+							<md-button md-menu-align-target ng-click="ctrl.announceClick($index)">
+								<div layout="row" flex>
+									<p flex>Customize your collection!</p>
+								</div>
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
 			</div>
-			</div>
-			  <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-					  </div>
-				  </md-button>
-				</md-menu-item>
-			  </md-menu-content>
-			</md-menu>
-		  </div>
 		</md-toolbar>
-	</md-content>
- <?php
-    if ($_GET['page'] === 'collection') {
-        include('collection/collection.php');
-    } else {
-        include('home.php');
-    }?>
-<script src="assets/js/function.js"></script>
+	</md-content> 
+	<?php
+		if ($_GET['page'] === 'collection') {
+			include('collection/collection.php');
+		} else {
+			include('home.php');
+		}
+	?>
+	<script src="assets/js/function.js"></script>
 </body>
 </html>
