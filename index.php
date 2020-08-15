@@ -109,20 +109,6 @@
 						<a href="https://genius.com/" class="logo_link">GENIUS</a>
 					</div>
 				</div>
-				<md-menu md-position-mode="target-right target">
-					<md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-					</md-button>
-					<md-menu-content width="6">
-						<md-menu-item>
-							<md-button md-menu-align-target ng-click="ctrl.announceClick($index)">
-								<div layout="row" flex>
-									<p flex>Customize your collection!</p>
-								</div>
-							</md-button>
-						</md-menu-item>
-					</md-menu-content>
-				</md-menu>
 			</div>
 		</md-toolbar>
 	</md-content> 
