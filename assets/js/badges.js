@@ -592,7 +592,7 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 	//---------------------------------------------------------------------------------------
 	//---------------------------------------------------------------------------------------
 	
-	if(scope.apiobject.apicode) {
+	if($scope.apiobject.apicode) {
 		
 	}
 	
