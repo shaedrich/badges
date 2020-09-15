@@ -15,7 +15,6 @@ body {
 	background-color: #ffff64;
 	height: 44px;
 	overflow:hidden;
-	border-bottom-color: white;
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 	min-height: initial;
@@ -103,7 +102,7 @@ div .selected {
 	font-weight: 200;
     width: 80%;
     font-family: "Programme2";
-    margin: 4vh 4vh 4vh 4vh;
+    margin: 3vh 4vh 4vh 4vh;
 }
 
 #badgescontainer {

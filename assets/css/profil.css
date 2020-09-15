@@ -30,7 +30,7 @@
 }
 .profile_header {
     max-height: 18em;
-    color: #fff;
+    color: white;
 }
 .banner_image-blurred_image {
     -webkit-filter: blur(2px);

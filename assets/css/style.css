@@ -96,10 +96,11 @@ body {
     background-color: rgba(158, 158, 158, 0.2);
 }
 .badges-layout md-sidenav {
-    border-right-width: 3px;
+    border-right-width: 4px;
     border-right-style: solid;
     border-right-color: #ffff64;
 	background-color: #303030;
+	font-weight: 100;
 	color: white;
 }
 .badges-layout md-backdrop.md-opaque {
