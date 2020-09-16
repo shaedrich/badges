@@ -1,0 +1,90 @@
+body {
+   font-family: 'Programme2';
+   margin:0;
+   background-color:#303030;
+   display:flex;
+   flex-direction:column;
+   overflow: inherit;
+}
+
+#badgescontainer {
+	width: 100%;
+	background-color: #303030;
+	padding: 5% 5% 5% 5%;
+	flex-shrink: 0;
+	margin-left: 0;
+	position: relative;
+}
+
+#collectioncontainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #303030;
+}
+
+.infocontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #303030;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
+    margin-bottom: 41px;
+    width: 100%;
+}	
+
+.headline {
+	align-self: center;
+	font-size: 2em;
+	font-weight: 200;
+	color: white;
+}
+
+.info {
+    align-self: center;
+    font-size: 1.1em;
+	font-weight: 200;
+    width: 80%;
+    font-family: "Programme2";
+    margin: 4vh 4vh 4vh 4vh;
+	color: white;
+}
+
+.profile_header {
+    color: #303030;
+}
+
+#optionscontainer {
+    width: 100%;
+    height: 100%;
+    background: #303030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.badges-layout h1 {
+    font-family: "Programme2";
+    letter-spacing: normal;
+    font-weight: 200;
+    color: white;
+}	
+
+.badges-layout md-sidenav {
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: #ffff64;
+	background-color: #303030;
+	color: white;
+}

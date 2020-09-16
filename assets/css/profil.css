@@ -29,8 +29,7 @@
     box-sizing: border-box;
 }
 .profile_header {
-    max-height: 18em;
-    color: white;
+    color: #fff;
 }
 .banner_image-blurred_image {
     -webkit-filter: blur(2px);

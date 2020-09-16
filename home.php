@@ -30,6 +30,11 @@
 			<md-list-item id="impressum" class="secondary-button-padding" ng-click="doSecondaryAction($event)">
 				<md-icon md-svg-icon="lock"></md-icon>
 				<p>PRIVACY & TERMS</p>
+				</md-list-item>
+			<md-divider></md-divider>
+			<md-list-item id="impressum" class="secondary-button-padding">
+				<md-icon md-svg-icon="Theme"></md-icon>
+				<p>SWITCH THEME</p>
 			</md-list-item>
 		</md-list>
 	</md-sidenav>

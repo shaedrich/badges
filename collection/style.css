@@ -1,7 +1,7 @@
 body {
    font-family: 'Programme2';
    margin:0;
-   background-color:#303030;
+   background-color:#F5F7FA;
    display:flex;
    flex-direction:column;
    overflow: inherit;
@@ -21,7 +21,7 @@ body {
     width: initial;
     display: inherit;
     font-weight: initial;
-    font-size: initial;
+    font-size: initial
 }
 .nav:after {
 	position: absolute;
@@ -81,8 +81,7 @@ div .selected {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #303030;
-	color: #ffffff;
+    background-color: white;
     padding-top: 6vh;
     padding-bottom: 4vh;
     margin-bottom: 41px;
@@ -93,7 +92,6 @@ div .selected {
 	align-self: center;
 	font-size: 2em;
 	font-weight: 200;
-	color: white;
 }
 
 .info {
@@ -102,12 +100,12 @@ div .selected {
 	font-weight: 200;
     width: 80%;
     font-family: "Programme2";
-    margin: 3vh 4vh 4vh 4vh;
+    margin: 4vh 4vh 4vh 4vh;
 }
 
 #badgescontainer {
 	width: 100%;
-	background-color: #303030;
+	background-color: white;
 	padding: 5% 5% 5% 5%;
 	flex-shrink: 0;
 	margin-left: 0;
@@ -120,7 +118,7 @@ div .selected {
 	z-index: 10;
 	border:10px solid transparent;
 	background-color: #ff1464;
-	color: #ffffff;
+	color: white;
 }
 
 .fixed {
@@ -135,7 +133,7 @@ div .selected {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: #303030;
+    background-color: #ffffff;
 }
 
 .navisfixed {
@@ -166,7 +164,7 @@ div .selected {
 	font-size: 4em;
 	text-align: center;
 	border: none;
-	background: black;
+	background: none;
 	cursor: move;
 	display: inline-block;
 }

@@ -1,0 +1,26 @@
+body {
+   font-family: 'Programme2';
+   margin:0;
+   background-color:#303030;
+   display:flex;
+   flex-direction:column;
+   overflow: inherit;
+}
+
+#badgescontainer {
+	width: 100%;
+	background-color: #303030;
+	padding: 5% 5% 5% 5%;
+	flex-shrink: 0;
+	margin-left: 0;
+	position: relative;
+}
+
+#collectioncontainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #303030;
+}
+
+
