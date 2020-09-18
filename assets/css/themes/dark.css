@@ -102,3 +102,8 @@ body {
     font-weight: 300;
 	color: white;
 }
+
+html.md-default-theme, html, body.md-default-theme, body {
+    color: #303030;
+	background-color: #303030;
+}
