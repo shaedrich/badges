@@ -42,7 +42,7 @@
 		<md-card-content>
 			<div id="optionscontainer" ng-style="styles.optionscontainer">
 				<div id="info" ng-style="styles.info">
-					<img id="badgeslogo" src="images/badgeslogooncircle.png" />
+					<img id="badgeslogo" src="images/badgeslogooncircletransparent.png" />
 					<h1 id="title">BADGES</h1>
 				</div>	
 				<form action="">
