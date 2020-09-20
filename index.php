@@ -43,7 +43,6 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="collection/style.css">
 	<link rel="stylesheet" href="assets/css/profil.css">
-	<link rel="stylesheet" href="assets/css/themes/dark.css">
 	<!-- | JS -->
 	<!-- || LIBRARIES -->
 	<script src="libraries/sortable-animation/Sortable.js"></script>

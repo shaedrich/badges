@@ -4,6 +4,9 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 
 	svg4everybody();
 
+	$scope.theme = localStorage.getItem('theme') || 'light'
+	console.log('$scope', $scope)
+
 	$scope.buildToggler = function (componentId) {
 		return function () {
 			$mdSidenav(componentId).toggle();
@@ -18,6 +21,26 @@ mainfunction = function all($scope, $timeout, $mdSidenav, $mdDialog, $window, $h
 	};
 
 	$scope.toggleLeft = $scope.buildToggler('left');
+
+	$scope.toggleTheme = function () {
+		$scope.theme = $scope.theme === 'light' ? 'dark' : 'light'
+		localStorage.setItem('theme', $scope.theme)
+		$scope.loadTheme()
+	}
+
+	$scope.loadTheme = function () {
+		var newTheme = $('<link />', {
+			rel: 'stylesheet',
+			href: `assets/css/themes/${$scope.theme}.css`,
+			id: 'theme'
+		})
+		if (!!$('link#theme').length) {
+			$('link#theme').replaceWith(newTheme)
+		} else {
+			$('head').append(newTheme)
+		}
+	}
+	$scope.loadTheme()
 
 	$scope.doPrimaryAction = function (event) {
 		$mdDialog.show(

@@ -32,9 +32,9 @@
 				<p>PRIVACY & TERMS</p>
 				</md-list-item>
 			<md-divider></md-divider>
-			<md-list-item id="impressum" class="secondary-button-padding">
+			<md-list-item id="impressum" class="secondary-button-padding" ng-click="toggleTheme()">
 				<md-icon md-svg-icon="Theme"></md-icon>
-				<p>SWITCH THEME</p>
+				<p>TOGGLE THEME</p>
 			</md-list-item>
 		</md-list>
 	</md-sidenav>
