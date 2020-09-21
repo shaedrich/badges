@@ -107,3 +107,17 @@ html.md-default-theme, html, body.md-default-theme, body {
     color: #303030;
 	background-color: #303030;
 }
+
+.badges-layout md-card md-card-content {
+    height: 100%;
+	background-color: #303030;
+}
+
+.badges-layout #site {
+    width: 100%;
+    height: calc(100% - 41px);
+    padding: 2% 10% 2%;
+    background: #303030;
+    top: 41px;
+    position: absolute;
+}
