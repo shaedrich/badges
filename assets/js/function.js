@@ -137,5 +137,5 @@ loadUser(8068117).then(function(userData) {
 	banner.style.backgroundImage = `url(${userData.header_image_url})`;
 	avatar.style.backgroundImage = `url(${userData.avatar.small.url})`;
 	username.innerHTML = `${userData.name} (@${userData.login})`
-	iq.innerHTML = userData.iq
+	iq.innerHTML = Intl.NumberFormat().format(userData.iq)
 })
