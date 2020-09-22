@@ -98,7 +98,62 @@
 </head>
 
 <body class="badges-layout" ng-app="badges" ng-controller="all" ng-cloak>
-	<md-content>
+	<md-content id="site" ng-style="styles.site">
+		<md-sidenav class="md-sidenav-left" md-component-id="left">
+			<md-list>
+				<md-list-item>
+					<div class="md-list-item-text" layout="column">
+						<h2><a ng-href="{{homepath}}" id="badgesdrawertitle">BADGES</a></h2>
+					</div>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item class="secondary-button-padding" ng-href="?page=collection">
+					<md-icon md-svg-icon="brush"></md-icon>
+					<p flex>CUSTOMIZE COLLECTION</p>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
+					<md-icon md-svg-icon="help-circle"></md-icon>
+					<p>ABOUT</p>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item id="donate" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.donate}}" ng-mousedown="ui.newtab()">
+					<md-icon md-svg-icon="currency-usd"></md-icon>
+					<p>DONATE</p>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item id="github" class="secondary-button-padding md-primary" target="_blank" ng-href="{{url.github}}" ng-mousedown="ui.newtab()">
+					<md-icon md-svg-icon="github-circle"></md-icon>
+					<p>GITHUB</p>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item id="impressum" class="secondary-button-padding" ng-click="doSecondaryAction($event)">
+					<md-icon md-svg-icon="lock"></md-icon>
+					<p>PRIVACY & TERMS</p>
+					</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item id="impressum" class="secondary-button-padding" ng-click="toggleTheme()">
+					<md-icon md-svg-icon="Theme"></md-icon>
+					<p>TOGGLE THEME</p>
+				</md-list-item>
+			</md-list>
+		</md-sidenav>
+		<md-card id="top" ng-style="styles.top">
+			<md-card-content>
+				<div id="optionscontainer" ng-style="styles.optionscontainer">
+					<div id="info" ng-style="styles.info">
+						<img id="badgeslogo" src="images/badgeslogooncircletransparent.png" />
+						<h1 id="title">BADGES</h1>
+					</div>	
+					<form action="">
+						<md-input-container id="inputcontainer" class="md-block" flex-gt-sm
+							ng-style="styles.inputcontainer">
+	    
+						</md-input-container>
+					</form>
+				</div>
+			</md-card-content>	
+		</md-card>		
 		<md-toolbar>
 			<div class="md-toolbar-tools">
 				<md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
