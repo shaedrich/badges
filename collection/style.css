@@ -105,7 +105,6 @@ div .selected {
 
 #badgescontainer {
     width: 100%;
-    background-color: white;
     padding: 5% 5% 5% 5%;
     flex-shrink: 0;
     margin-left: 0;
@@ -133,7 +132,6 @@ div .selected {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: #ffffff;
 }
 
 .navisfixed {
