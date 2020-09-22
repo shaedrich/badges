@@ -1,123 +1,48 @@
-body {
-   font-family: 'Programme2';
-   margin:0;
-   background-color:#303030;
-   display:flex;
-   flex-direction:column;
-   overflow: inherit;
-}
-
-#badgescontainer {
-	width: 100%;
-	background-color: #303030;
-	padding: 5% 5% 5% 5%;
-	flex-shrink: 0;
-	margin-left: 0;
-	position: relative;
-}
-
-#collectioncontainer {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+html.md-default-theme,
+html,
+body.md-default-theme,
+body,
+#badgescontainer,
+#collectioncontainer,
+.infocontainer,
+#optionscontainer,
+.badges-layout md-card md-card-content,
+.badges-layout #site,
+.badges-layout md-sidenav {
     background-color: #303030;
 }
 
-.infocontainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #303030;
-    padding-top: 6vh;
-    padding-bottom: 4vh;
-    margin-bottom: 41px;
-    width: 100%;
-}	
-
-.headline {
-	align-self: center;
-	font-size: 2em;
-	font-weight: 200;
-	color: white;
+.info,
+.headline,
+.badges-layout h1,
+.badges-layout md-sidenav {
+    color: white;
 }
 
-.info {
-    align-self: center;
-    font-size: 1.1em;
-	font-weight: 200;
-    width: 80%;
-    font-family: "Programme2";
-    margin: 4vh 4vh 4vh 4vh;
-	color: white;
-}
-
+html.md-default-theme,
+html,
+body.md-default-theme,
+body,
 .profile_header {
     color: #303030;
 }
 
-#optionscontainer {
-    width: 100%;
-    height: 100%;
-    background: #303030;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.badges-layout h1 {
-    font-family: "Programme2";
-    letter-spacing: normal;
-    font-weight: 200;
-    color: white;
-}	
-
-.badges-layout md-sidenav {
-    border-right-width: 3px;
-    border-right-style: solid;
-    border-right-color: #ffff64;
-	background-color: #303030;
-	color: white;
-}
-
-.md-list-item .md-list-item-inner>div.md-primary>md-icon:not(.md-avatar-icon), md-list-item .md-list-item-inner>div.md-secondary>md-icon:not(.md-avatar-icon), md-list-item .md-list-item-inner>md-icon.md-secondary:not(.md-avatar-icon), md-list-item .md-list-item-inner>md-icon:first-child:not(.md-avatar-icon), md-list-item>div.md-primary>md-icon:not(.md-avatar-icon), md-list-item>div.md-secondary>md-icon:not(.md-avatar-icon), md-list-item>md-icon.md-secondary:not(.md-avatar-icon), md-list-item>md-icon:first-child:not(.md-avatar-icon) {
-	    width: 24px;
+.md-list-item .md-list-item-inner>div.md-primary>md-icon:not(.md-avatar-icon),
+md-list-item .md-list-item-inner>div.md-secondary>md-icon:not(.md-avatar-icon),
+md-list-item .md-list-item-inner>md-icon.md-secondary:not(.md-avatar-icon),
+md-list-item .md-list-item-inner>md-icon:first-child:not(.md-avatar-icon),
+md-list-item>div.md-primary>md-icon:not(.md-avatar-icon),
+md-list-item>div.md-secondary>md-icon:not(.md-avatar-icon),
+md-list-item>md-icon.md-secondary:not(.md-avatar-icon),
+md-list-item>md-icon:first-child:not(.md-avatar-icon) {
+    width: 24px;
     margin-top: 16px;
     margin-bottom: 12px;
     box-sizing: content-box;
-	background-color: white;
+    background-color: white;
 }
 
 .badges-layout label {
-    font-size: 24px;
     font-weight: 300;
-	color: white;
-}
-
-html.md-default-theme, html, body.md-default-theme, body {
-    color: #303030;
-	background-color: #303030;
-}
-
-.badges-layout md-card md-card-content {
-    height: 100%;
-	background-color: #303030;
-}
-
-.badges-layout #site {
-    width: 100%;
-    height: calc(100% - 41px);
-    padding: 2% 10% 2%;
-    background: #303030;
-    top: 41px;
-    position: absolute;
+    color: white;
 }
