@@ -15,8 +15,7 @@ body {
 	background-color: #ffff64;
 	height: 44px;
 	overflow:hidden;
-	border-bottom-style: solid transparent;
-	border-bottom-width: 3px;
+    border-bottom: 3px solid transparent;
 	min-height: initial;
     width: initial;
     display: inherit;
